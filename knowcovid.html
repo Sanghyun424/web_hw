@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            코로나 19 알기
+        </title>
+        <style>
+            body {background-color : rgb(171, 238, 238);}
+            h2 {
+                border-radius : 50px;
+                background-color : greenyellow;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>코로나 19 알기</h3>
+        <hr>
+        
+        <img src="images/virus.jpg" width="300" height="250" alt="코로나바이러스">
+        <img src="images/spvirus.jpg" width="500" height="300" alt="코로나바이러스">
+
+        <ol type="1">
+            <li><a href="#n1">코로나 바이러스의 개요</a></li>
+            <li><a href="#n2">코로나 바이러스의 분류</a></li>
+            <li><a href="#n3">코로나 바이러스의 형태</a></li>
+            <li><a href="#n4">코로나 바이러스의 감염 및 치료 정보</a></li>
+        </ol>
+        <hr>
+
+        <h2 id="n1">1.개요</h2>
+        <p id="p">버튼을 클릭하면 내용이 출력됩니다.</p>
+        <button onclick="f(event)">개요보기</button>
+
+        <h2 id="n2">2.분류</h2>
+        <p id="p2">버튼을 클릭하면 내용이 출력됩니다.</p>
+        <button onclick="f2(event)">분류보기</button>
+
+        <h2 id="n3">3.형태</h2>
+        <p id="p3">버튼을 클릭하면 내용이 출력됩니다.</p>
+        <button onclick="f3(event)">형태보기</button>
+
+        <h2 id="n4">4.감염 및 치료 정보</h2>
+        <p id="p4">버튼을 클릭하면 내용이 출력됩니다.</p>
+        <button onclick="f4(event)">감염및치료정보보기</button>
+
+        <script>
+            function f(e) {
+                var text  = "코로나 바이러스는 사람과 다양한 동물에 감염될 수 있는"
+                + " 바이러스로서 유전자 크기 27~32kb의 RNA 바이러스";
+
+
+                var p = document.getElementById("p");
+                p.innerHTML = text;
+            }
+
+            function f2(e) {
+                var text  = "코로나 바이러스과에는 4개의 속(알파,베타,감마,델타)가 존재"
+                        +"<br>-알파 베타: 사람과 동물에게 감염"
+                        +"<br>-감마 델타: 동물에게 감염";
+
+
+                var p2 = document.getElementById("p2");
+                p2.innerHTML = text;
+            }
+
+            function f3(e) {
+                var text  = "형태는 코로나 바이러스의 명명과 같이 전자현미경 관찰시 구형"
+                + "<br>-외부 spike단백질이 특징적인 크라운형태";
+
+
+                var p3 = document.getElementById("p3");
+                p3.innerHTML = text;
+            }
+
+            function f4(e) {
+                var text  = "-주된 감염경로는 감염자의 비말에 의한 전파"
+                        + "<br>-사람 간에 전파되며, 대부분의 감염은 감염자가, 기침 재채기, 말하기"
+                        + ", 노래 등을 할 때 발생한 호흡기 비말을 다른사람이 밀접접촉(주로 2m이내) 하여 발생 "
+                        + "<br>-특이 치료재는 없으며 증상에 따른 해열제, 수액공급, 진해제등 대증치료"
+                        + "<br>-호흡 곤란시 산소를 공급하고 필요한 경우에는 기계호흡이나 체외막 산소공급 등의 처치를 시행";
+
+
+
+
+                var p4 = document.getElementById("p4");
+                p4.innerHTML = text;
+            }
+
+        </script>
+
+    </body>
+</html>

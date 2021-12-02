@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>코로나 의심증상 확인</title>
+    <style>
+        body {background-color : rgb(171, 238, 238);}
+    </style>
+</head>
+<body>
+    <h3>코로나 의심증상 확인</h3>
+    <hr>
+    <p>코로나 의심증상</p>
+    <ul>
+        <li>발열 및 기침 증상</li>
+        <li>드문 인후통, 두통, 몸살, 설사 증상</li>
+        <li>심각한 호흡곤란 및 언어 또는 운동 장애, 가슴 통증</li>
+    </ul>
+    
+    <p>코로나 검사 후 유의해야 할 점</p>
+    <ul>
+        <li>자택 대기 필수! 결과 통보시 까지 외출 금지</li>
+        <li>검사가 끝난 후에는 도보를 통해 귀가할 것</li>
+        <li>대인간 밀접 접촉에 유의할 것</li>
+    </ul>
+    <script>
+        var first = prompt("발열 및 기침 증상을 가지고 있나요?(yes, no로 대답)");
+        var second = prompt("드물게 인후통, 두통, 몸살, 설사 증상이 발생하나요?(yes, no로 대답)");
+        var third = prompt("심각한 호흡곤란 및 언어 또는 운동 장애, 가슴 통증을 가지고 있나요?(yes, no로 대답)");
+
+        if (first == "yes" || second == "yes" || third == "yes") {
+            alert("코로나 19 의심증상이 발견되었습니다. 가까운 곳에서 코로나 19 검사를 진행하여 주세요.");
+        }
+        else {
+            alert("코로나 19 의심증상이 발견되지 않았습니다. 코로나 19 예방에 앞으로도 신경써 주세요.");
+        }
+    </script>
+</body>
